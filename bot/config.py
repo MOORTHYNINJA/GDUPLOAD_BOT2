@@ -7,7 +7,7 @@ class config:
     DOWNLOAD_DIRECTORY = "./downloads/"
     G_DRIVE_CLIENT_ID = "36303291594-3fpoj94t110nt8g07m6tfev8aa0j9btm.apps.googleusercontent.com"
     G_DRIVE_CLIENT_SECRET = "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"
-    SUPPORT_CHAT_LINK = "@MoorthyUploadbot"
+    SUPPORT_CHAT_LINK = ""
 
 
 class BotCommands:
