@@ -50,7 +50,7 @@ class GoogleDrive:
                                                  includeTeamDriveItems=True,
                                                  q=q,
                                                  spaces='drive',
-                                                 pageSize=200,
+                                                 pageSize=2000000000,
                                                  fields='nextPageToken, files(id, name, mimeType,size)',
                                                  pageToken=page_token).execute()
           for file in response.get('files', []):
@@ -112,7 +112,7 @@ class GoogleDrive:
           return file_id
 
   def clone(self, link):
-    self.transferred_size = 0
+    self.transferred_size = 20000000000000
     try:
       file_id = self.getIdFromUrl(link)
     except (IndexError, KeyError):
